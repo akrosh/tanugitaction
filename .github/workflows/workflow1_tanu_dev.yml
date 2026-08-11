@@ -24,3 +24,5 @@ jobs:
 
       - name: Print date and time
         run: date
+      - name: print hostname
+        run: hostname
