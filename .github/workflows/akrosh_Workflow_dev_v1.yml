@@ -9,11 +9,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      env:
+        name:"akrosh"
+        company:"opt"
       - name: Say Hello multipale step run
+      
         run: |
           echo "Hello from Tanuja Technologies"
           date
           uname -a
+          echo "Hellow $name . are you working in $company "
 
       - name: List current directory
         run: ls -ltr
