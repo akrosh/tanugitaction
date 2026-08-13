@@ -3,6 +3,8 @@ name: First_Workflow_tanu_dev
 on:
 
   workflow_dispatch:   #runs the workflow manually
+env : 
+  workflow_var : workflow_val
 
 jobs:
   basic-demo_1:
@@ -17,7 +19,7 @@ jobs:
         env :
           step_var : step_val
         run: |
-          echo "Hello from Tanuja Technologies step_var value = $step_var and job_var = $job_var" 
+          echo "Hello from Tanuja Technologies step_var value = $step_var and job_var = $job_var and workflow_var = $workflow_var" 
           date
           uname -a
 
