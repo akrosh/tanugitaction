@@ -1,8 +1,7 @@
 name: First_Workflow_tanu_dev
 
 on:
-  push:
-    branches: [ main ]
+
   workflow_dispatch:   #runs the workflow manually
 
 jobs:
